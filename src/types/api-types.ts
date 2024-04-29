@@ -37,7 +37,6 @@ export type AllProductsResponse = {
   success: boolean;
   products: Product[];
 };
-
 export type CategoriesResponse = {
   success: boolean;
   categories: string[];
@@ -46,7 +45,6 @@ export type CategoriesResponse = {
 export type SearchProductsResponse = AllProductsResponse & {
   totalPage: number;
 };
-
 export type SearchProductsRequest = {
   price: number;
   page: number;
@@ -54,7 +52,6 @@ export type SearchProductsRequest = {
   search: string;
   sort: string;
 };
-
 export type ProductResponse = {
   success: boolean;
   product: Product;
@@ -64,7 +61,6 @@ export type AllOrdersResponse = {
   success: boolean;
   orders: Order[];
 };
-
 export type OrderDetailsResponse = {
   success: boolean;
   order: Order;
@@ -94,13 +90,11 @@ export type NewProductRequest = {
   id: string;
   formData: FormData;
 };
-
 export type UpdateProductRequest = {
   userId: string;
   productId: string;
   formData: FormData;
 };
-
 export type DeleteProductRequest = {
   userId: string;
   productId: string;
@@ -108,8 +102,8 @@ export type DeleteProductRequest = {
 
 export type NewOrderRequest = {
   shippingInfo: ShippingInfo;
-  orderItem: CartItem[];
-  subTotal: number;
+  orderItems: CartItem[];
+  subtotal: number;
   tax: number;
   shippingCharges: number;
   discount: number;
