@@ -95,3 +95,4 @@ const Checkout = () => {
     </Elements>
   );
 };
+export default Checkout;
